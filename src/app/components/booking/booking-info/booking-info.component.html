@@ -1,1 +1,25 @@
-<p>booking-info works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Booking: {{ booking.confirmationCode }}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>Check-in: {{ booking.checkin | date: 'dd-MM-yyyy' }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>Checkout: {{ booking.checkout | date: 'dd-MM-yyyy' }}</p>
+  </div>
+</div>
+<div class="row" *ngIf="booking.extras?.length !== 0">
+  <div class="col-xs-12">
+    <p>Addons purchased: {{ booking.extras?.length }}</p>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let extra of booking.extras">
+        <p>{{ extra.category }} | {{ extra.type }} | £{{ extra.price }} </p>
+      </li>
+    </ul>
+  </div>
+</div>

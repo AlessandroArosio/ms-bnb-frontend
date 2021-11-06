@@ -21,7 +21,8 @@ export class BookingInfoComponent implements OnInit {
     checkin: new Date('2021-12-22'),
     checkout: new Date('2021-12-24'),
     confirmationCode: "TEST-12345",
-    extras: this.extras,
+    extras: this.extras.addonList,
+    extrasPaid: this.extras.isPaid,
     hasAddons: !!this.extras,
   }
   constructor() { }
