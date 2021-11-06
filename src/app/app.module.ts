@@ -9,6 +9,7 @@ import {TransportComponent} from './components/transport/transport.component';
 import {BookingInfoComponent} from './components/booking/booking-info/booking-info.component';
 import {BookingListComponent} from './components/booking/booking-list/booking-list.component';
 import {BookingNewComponent} from './components/booking/booking-new/booking-new.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {BookingNewComponent} from './components/booking/booking-new/booking-new.
     BookingNewComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

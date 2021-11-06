@@ -5,12 +5,12 @@ export class Booking {
   id?: number;
   bookingUid?: string;
   customerId?: number;
-  checkin: Date;
-  checkout: Date;
+  checkin: Date | undefined;
+  checkout: Date | undefined;
   hasAddons?: boolean;
   extras?: Extras;
   notes?: string;
-  confirmationCode: string;
+  confirmationCode: string | undefined;
   roomsBooked?: RoomsBooked[];
   createdDate?: Date;
   lastModifiedDate?: Date;
