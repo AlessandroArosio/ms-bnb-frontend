@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {BusResponse} from "../../common/bus/BusResponse";
 
 @Component({
   selector: 'app-transport',
@@ -6,8 +7,15 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./transport.component.css']
 })
 export class TransportComponent implements OnInit {
+  busResponse: BusResponse[] = [
+    {
+      busRoute: 'route',
+      stopId: 'stop id 3'
+    }
+  ];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

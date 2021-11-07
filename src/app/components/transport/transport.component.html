@@ -1,1 +1,9 @@
-<p>transport works!</p>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let bus of busResponse">
+        {{ bus.stopId }} --> {{ bus.busRoute }}
+      </li>
+    </ul>
+  </div>
+</div>

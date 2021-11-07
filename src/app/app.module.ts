@@ -10,6 +10,7 @@ import {BookingInfoComponent} from './components/booking/booking-info/booking-in
 import {BookingListComponent} from './components/booking/booking-list/booking-list.component';
 import {BookingNewComponent} from './components/booking/booking-new/booking-new.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {AppRoutingModule} from "./app-routing.module";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
